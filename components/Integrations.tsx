@@ -11,18 +11,14 @@ const integrationCategories = [
 export default function Integrations() {
   return (
     <section id="integrations" className="py-12 md:py-16">
-      {" "}
-      {/* Light gray background */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-3xl font-extrabold text-foreground sm:text-4xl">
             Integrations
-          </h2>{" "}
-          {/* Dark text for headings */}
+          </h2>
           <p className="mt-4 text-xl text-gray-700">
-            Seamless integration with the tools you're already using
-          </p>{" "}
-          {/* Darker gray text */}
+            Seamless integration with the tools you&apos;re already using
+          </p>
         </div>
 
         <div className="mt-10">
@@ -43,7 +39,6 @@ export default function Integrations() {
                 key={category.name}
                 icon={category.icon}
                 title={category.name}
-                description=""
               />
             ))}
           </div>

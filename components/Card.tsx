@@ -5,7 +5,7 @@ const Card = ({
 }: {
   icon: React.ElementType;
   title: string;
-  description: string;
+  description?: string;
 }) => {
   return (
     <div className="bg-white rounded-xl shadow-card p-8 hover:shadow-lg transition-all duration-300 transform hover:scale-105">
