@@ -32,7 +32,7 @@ export default function Company() {
             Company
           </h2>
           <p className="mt-4 text-xl text-gray-700">
-            We aren't just another fintech company
+            {"We aren't just another fintech company"}
           </p>
         </div>
 
