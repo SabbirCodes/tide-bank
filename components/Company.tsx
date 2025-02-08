@@ -19,7 +19,7 @@ const coreValues = ["Transparency", "Innovation", "Inclusion"];
 
 const leadershipTeam = [
   { name: "Martin Moupanaga", role: "Founder & CEO" },
-  { name: "Heekiu Man", role: "COO" },
+  { name: "Hrishin Debnath", role: "Chief of Research" },
   { name: "Lohith Neerukonda", role: "CTO" },
 ];
 
