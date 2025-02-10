@@ -4,8 +4,8 @@ import type React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Footer from "@/components/Footer";
-// import MenuBar from "@/components/Menu";
 import Popup from "@/components/Popup";
+import Menubar from "@/components/Menubar";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -38,7 +38,7 @@ export default function RootLayout({
         <div className="flex flex-col min-h-screen">
           {/* Header */}
           <header className="bg-[#240642]/90 backdrop-blur-xl sticky top-0 z-50 border-b border-white/10">
-            <nav className="w-full h-20 flex items-center justify-between px-2 lg:px-16">
+            <nav className="w-full h-16 sm:h-20 flex items-center justify-between px-2 lg:px-16">
               {/* Logo */}
               <Link href="/" className="flex items-center">
                 <div className="relative w-32 h-32 lg:w-40 lg:h-40">
@@ -71,15 +71,15 @@ export default function RootLayout({
               {/* Action Button */}
               <button
                 type="button"
-                className="sm:block px-6 py-2 text-white rounded-full bg-secondary hover:bg-blue-500 transition font-semibold shadow-md"
+                className="hidden sm:block px-6 py-2 text-white rounded-full bg-secondary hover:bg-blue-500 transition font-semibold shadow-md"
                 aria-label="Get Help"
               >
                 Get Help
               </button>
               {/* Menu bar */}
-              {/* <div className="sm:hidden">
-                <MenuBar />
-              </div> */}
+              <div className="sm:hidden">
+                <Menubar />
+              </div>
             </nav>
           </header>
 
